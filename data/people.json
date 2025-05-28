@@ -1,0 +1,105 @@
+{
+  "boardOfAdvisors": [
+    {
+      "id": "rasool",
+      "name": "Ambassador Ebrahim Rasool",
+      "position": "Chair, Board of Advisors",
+      "image": "https://ui-avatars.com/api/?name=Ebrahim+Rasool&background=bc070f&color=fff",
+      "bio": "Ambassador Ebrahim Rasool is a distinguished diplomat and political leader with extensive experience in international relations and governance.",
+      "email": "erasool@tfiuk.org",
+      "phone": "+44 20 XXXX XXXX"
+    },
+    {
+      "id": "tariq",
+      "name": "Dr Faisal Tariq",
+      "position": "Secretary, Board of Advisors",
+      "image": "https://ui-avatars.com/api/?name=Faisal+Tariq&background=bc070f&color=fff",
+      "bio": "Dr Faisal Tariq brings years of academic and administrative experience to his role as Secretary of the Board of Advisors.",
+      "email": "ftariq@tfiuk.org",
+      "phone": "+44 20 XXXX XXXX"
+    },
+    {
+      "id": "aktay",
+      "name": "Professor Dr Yasin Aktay",
+      "position": "Member, Board of Advisors",
+      "image": "https://ui-avatars.com/api/?name=Yasin+Aktay&background=bc070f&color=fff",
+      "bio": "Professor Dr Yasin Aktay is a renowned academic with expertise in political science and international relations.",
+      "email": "yaktay@tfiuk.org",
+      "phone": "+44 20 XXXX XXXX"
+    },
+    {
+      "id": "aziz",
+      "name": "Dr Mohammed Abdul Aziz",
+      "position": "Member, Board of Advisors",
+      "image": "https://ui-avatars.com/api/?name=Mohammed+Aziz&background=bc070f&color=fff",
+      "bio": "Dr Mohammed Abdul Aziz is a respected scholar and policy expert with a focus on international development.",
+      "email": "maziz@tfiuk.org",
+      "phone": "+44 20 XXXX XXXX"
+    },
+    {
+      "id": "al-azami",
+      "name": "Lubaaba Al-Azami",
+      "position": "Member, Board of Advisors",
+      "image": "https://ui-avatars.com/api/?name=Lubaaba+Al-Azami&background=bc070f&color=fff",
+      "bio": "Lubaaba Al-Azami brings valuable expertise in strategic planning and organizational development.",
+      "email": "lalazami@tfiuk.org",
+      "phone": "+44 20 XXXX XXXX"
+    }
+  ],
+  "researchTeam": [
+    {
+      "id": "begum",
+      "name": "Dr Gulshanara Begum",
+      "position": "Senior Research Fellow",
+      "image": "https://ui-avatars.com/api/?name=Gulshanara+Begum&background=bc070f&color=fff",
+      "bio": "Dr Gulshanara Begum leads our research initiatives with her extensive experience in social sciences.",
+      "email": "gbegum@tfiuk.org",
+      "phone": "+44 20 XXXX XXXX"
+    },
+    {
+      "id": "sakib",
+      "name": "Dr Nazmus Sakib",
+      "position": "Research Fellow in International Relations",
+      "image": "https://ui-avatars.com/api/?name=Nazmus+Sakib&background=bc070f&color=fff",
+      "bio": "Dr Nazmus Sakib specializes in international relations and global politics.",
+      "email": "nsakib@tfiuk.org",
+      "phone": "+44 20 XXXX XXXX"
+    },
+    {
+      "id": "amin",
+      "name": "Dr Faroque Amin",
+      "position": "Research Fellow in Politics and Religion",
+      "image": "https://ui-avatars.com/api/?name=Faroque+Amin&background=bc070f&color=fff",
+      "bio": "Dr Faroque Amin focuses on the intersection of politics and religion in contemporary societies.",
+      "email": "famin@tfiuk.org",
+      "phone": "+44 20 XXXX XXXX"
+    },
+    {
+      "id": "hossain",
+      "name": "Mohammad Hossain",
+      "position": "Research Assistant in Environmental Policy",
+      "image": "https://ui-avatars.com/api/?name=Mohammad+Hossain&background=bc070f&color=fff",
+      "bio": "Mohammad Hossain contributes to our environmental policy research initiatives.",
+      "email": "mhossain@tfiuk.org",
+      "phone": "+44 20 XXXX XXXX"
+    },
+    {
+      "id": "nazib",
+      "name": "Abdullah Mahmud Nazib",
+      "position": "Research Intern for Middle Eastern Studies",
+      "image": "https://ui-avatars.com/api/?name=Abdullah+Nazib&background=bc070f&color=fff",
+      "bio": "Abdullah Mahmud Nazib supports our Middle Eastern studies research program.",
+      "email": "anazib@tfiuk.org",
+      "phone": "+44 20 XXXX XXXX"
+    },
+    {
+      "id": "salam",
+      "name": "Adnan Bin Abdus Salam",
+      "position": "IT Intern",
+      "image": "https://ui-avatars.com/api/?name=Adnan+Salam&background=bc070f&color=fff",
+      "bio": "Adnan Bin Abdus Salam provides technical support for our research initiatives.",
+      "email": "asalam@tfiuk.org",
+      "phone": "+44 20 XXXX XXXX"
+    }
+  ]
+}

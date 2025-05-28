@@ -1,0 +1,76 @@
+{
+  "issues": [
+    {
+      "id": "april-2025",
+      "month": "April",
+      "year": "2025",
+      "title": "The Future: April 2025 Issue",
+      "issn": "2753-3670",
+      "description": "The Future is a newsletter periodically published by The Future Institute from First Floor, East, Business Centre, 93 Greenfield Rd, London E1 1EJ. This newsletter aims to chronicle the major events and developments in the societies of the emerging nations with the potential of impacting their future. This publication offers snippets of news analysis that might be advantageous to the academics, policymakers, social and political workers, students and various organisations.",
+      "editors": "Contributing Editors: Mohammad Hossain, Dr Nazmus Sakib and Dr Faroque Amin",
+      "contact": "If you are interested to engage and to contribute in TFI activities, please write to us at admin@tfiuk.org",
+      "articles": [
+        {
+          "title": "Systemic Oppression of Minorities in India and Its Ripple Effects on Bangladesh",
+          "author": "S. M. Riazul Islam",
+          "content": "India has long relied on the cooperative relationship fostered by Sheikh Hasina and the Awami League in Bangladesh, prioritizing political alliances at the party level over fostering genuine connections with the broader Bangladeshi populace. However, after being ousted from power and fleeing to India, Sheikh Hasina is grappling with mounting challenges and a complex political transition. This situation has significant implications for the relationship between India and Bangladesh, particularly in terms of minority rights and regional stability."
+        },
+        {
+          "title": "BANGLADESH IN 21st CENTURY: A call for an all-inclusive national revival",
+          "author": "Dr M Abdul Bari",
+          "content": "Bangladesh, a historical land of over 170 million people compacted into a small landmass, was paralysed by 190 years of British colonial humiliation. Sadly, after a brief period of post-colonial Pakistani political-economic domination, the country has entered a new phase of Indian intellectual-cultural domination. While the country has recently made good economic progress, its otherwise resilient population is experiencing despondency due to its deeply divided politics and a litany of corruption and moral breakdown."
+        }
+      ]
+    },
+    {
+      "id": "march-2025",
+      "month": "March",
+      "year": "2025",
+      "title": "The Future: March 2025 Issue",
+      "issn": "2753-3670",
+      "description": "The Future is a newsletter periodically published by The Future Institute from First Floor, East, Business Centre, 93 Greenfield Rd, London E1 1EJ. This newsletter aims to chronicle the major events and developments in the societies of the emerging nations with the potential of impacting their future. This publication offers snippets of news analysis that might be advantageous to the academics, policymakers, social and political workers, students and various organisations.",
+      "editors": "Contributing Editors: Mohammad Hossain, Dr Nazmus Sakib and Dr Faroque Amin",
+      "contact": "If you are interested to engage and to contribute in TFI activities, please write to us at admin@tfiuk.org",
+      "articles": [
+        {
+          "title": "Has Erdogan's dis-interest in traditional banking logic gone bust?",
+          "author": "TFI Desk",
+          "content": "Coronavirus shutdowns around the world pushed countries into crisis mode. Amid the death and destruction of lives, jobs and business, governments to tackle these issues cut down traditional economic thought with an unprecedented rescue spend. This effort to soften the blow from what's expected to be the worst economic freefall since the great depression has already seen over $10 trillion injected into nations across the globe."
+        }
+      ]
+    },
+    {
+      "id": "february-2025",
+      "month": "February",
+      "year": "2025",
+      "title": "The Future: February 2025 Issue",
+      "issn": "2753-3670",
+      "description": "The Future is a newsletter periodically published by The Future Institute from First Floor, East, Business Centre, 93 Greenfield Rd, London E1 1EJ. This newsletter aims to chronicle the major events and developments in the societies of the emerging nations with the potential of impacting their future. This publication offers snippets of news analysis that might be advantageous to the academics, policymakers, social and political workers, students and various organisations.",
+      "editors": "Contributing Editors: Mohammad Hossain, Dr Nazmus Sakib and Dr Faroque Amin",
+      "contact": "If you are interested to engage and to contribute in TFI activities, please write to us at admin@tfiuk.org",
+      "articles": []
+    },
+    {
+      "id": "january-2025",
+      "month": "January",
+      "year": "2025",
+      "title": "The Future: January 2025 Issue",
+      "issn": "2753-3670",
+      "description": "The Future is a newsletter periodically published by The Future Institute from First Floor, East, Business Centre, 93 Greenfield Rd, London E1 1EJ. This newsletter aims to chronicle the major events and developments in the societies of the emerging nations with the potential of impacting their future. This publication offers snippets of news analysis that might be advantageous to the academics, policymakers, social and political workers, students and various organisations.",
+      "editors": "Contributing Editors: Mohammad Hossain, Dr Nazmus Sakib and Dr Faroque Amin",
+      "contact": "If you are interested to engage and to contribute in TFI activities, please write to us at admin@tfiuk.org",
+      "articles": []
+    },
+    {
+      "id": "december-2024",
+      "month": "December",
+      "year": "2024",
+      "title": "The Future: December 2024 Issue",
+      "issn": "2753-3670",
+      "description": "The Future is a newsletter periodically published by The Future Institute from First Floor, East, Business Centre, 93 Greenfield Rd, London E1 1EJ. This newsletter aims to chronicle the major events and developments in the societies of the emerging nations with the potential of impacting their future. This publication offers snippets of news analysis that might be advantageous to the academics, policymakers, social and political workers, students and various organisations.",
+      "editors": "Contributing Editors: Mohammad Hossain, Dr Nazmus Sakib and Dr Faroque Amin",
+      "contact": "If you are interested to engage and to contribute in TFI activities, please write to us at admin@tfiuk.org",
+      "articles": []
+    }
+  ]
+}

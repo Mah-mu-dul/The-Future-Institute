@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog - The Future Institute</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              accent: "#bc070f",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-black">
+    <!-- Navigation -->
+    <nav class="bg-black text-white py-4 sticky top-0 z-50">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <a
+            href="index.html"
+            class="text-2xl font-bold mb-4 md:mb-0 text-accent"
+            >The Future Institute</a
+          >
+          <div class="flex flex-wrap justify-center gap-4 md:gap-6">
+            <a href="index.html#mission" class="hover:text-accent transition"
+              >Mission and Vision</a
+            >
+            <a href="index.html#governance" class="hover:text-accent transition"
+              >Governance</a
+            >
+            <a href="people.html" class="hover:text-accent transition"
+              >Our People</a
+            >
+            <a href="blog.html" class="hover:text-accent transition">Blog</a>
+            <div class="relative group">
+              <button class="hover:text-accent transition flex items-center">
+                The Future
+                <svg
+                  class="w-4 h-4 ml-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+              <div
+                class="absolute left-0 mt-2 w-48 bg-white text-black rounded-lg shadow-lg py-2 hidden group-hover:block"
+              >
+                <a
+                  href="issue.html?id=april-2025"
+                  class="block px-4 py-2 hover:bg-gray-100"
+                  >April 2025 Issue</a
+                >
+                <a
+                  href="issue.html?id=march-2025"
+                  class="block px-4 py-2 hover:bg-gray-100"
+                  >March 2025 Issue</a
+                >
+                <a
+                  href="issue.html?id=february-2025"
+                  class="block px-4 py-2 hover:bg-gray-100"
+                  >February 2025 Issue</a
+                >
+                <a
+                  href="issue.html?id=january-2025"
+                  class="block px-4 py-2 hover:bg-gray-100"
+                  >January 2025 Issue</a
+                >
+                <a
+                  href="issue.html?id=december-2024"
+                  class="block px-4 py-2 hover:bg-gray-100"
+                  >December 2024 Issue</a
+                >
+                <div class="border-t border-gray-200 my-1"></div>
+                <a
+                  href="issues.html"
+                  class="block px-4 py-2 hover:bg-gray-100 text-accent"
+                  >View All Issues</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <header class="bg-black text-white py-16 md:py-20">
+      <div class="container mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4 md:mb-6">Blog</h1>
+        <p class="text-lg md:text-xl mb-8">
+          Insights and Analysis from The Future Institute
+        </p>
+      </div>
+    </header>
+
+    <!-- Blog Posts -->
+    <section class="py-12 md:py-16">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <div id="blog-posts" class="space-y-12">
+            <!-- Blog posts will be loaded here -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8">
+      <div class="container mx-auto px-4 text-center">
+        <p>&copy; 2024 The Future Institute. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Fetch and display blog posts
+      fetch("data/blogs.json")
+        .then((response) => response.json())
+        .then((data) => {
+          const blogPostsContainer = document.getElementById("blog-posts");
+
+          data.blogs.forEach((blog) => {
+            const blogPost = document.createElement("article");
+            blogPost.className = "border-b border-gray-200 pb-12";
+
+            blogPost.innerHTML = `
+              <h2 class="text-2xl md:text-3xl font-bold mb-4">
+                <a href="blog-post.html?id=${blog.id}" class="hover:text-accent transition">
+                  ${blog.title}
+                </a>
+              </h2>
+              <p class="text-gray-600 mb-4">
+                By ${blog.author}, ${blog.date}
+              </p>
+              <p class="text-base md:text-lg mb-6">
+                ${blog.preview}
+              </p>
+              <a href="blog-post.html?id=${blog.id}" class="text-accent font-semibold hover:underline">
+                Read More →
+              </a>
+            `;
+
+            blogPostsContainer.appendChild(blogPost);
+          });
+        })
+        .catch((error) => console.error("Error loading blog posts:", error));
+    </script>
+  </body>
+</html>

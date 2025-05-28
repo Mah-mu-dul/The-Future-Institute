@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our People - The Future Institute</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              accent: "#bc070f",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-black text-white py-4 sticky top-0 z-50">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <a href="index.html" class="text-2xl font-bold mb-4 md:mb-0"
+            >The Future Institute</a
+          >
+          <div class="flex flex-wrap justify-center gap-4 md:gap-6">
+            <a href="index.html#mission" class="hover:text-accent transition"
+              >Mission and Vision</a
+            >
+            <a href="index.html#governance" class="hover:text-accent transition"
+              >Governance</a
+            >
+            <a href="people.html" class="hover:text-accent transition"
+              >Our People</a
+            >
+            <a href="#" class="hover:text-accent transition">Blog</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-black text-white py-16 md:py-20">
+      <div class="container mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4 md:mb-6">Our People</h1>
+        <p class="text-lg md:text-xl">
+          Meet the team behind The Future Institute
+        </p>
+      </div>
+    </header>
+
+    <!-- Board of Advisors Section -->
+    <section class="py-12 md:py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl md:text-3xl font-bold mb-8 md:mb-12 text-center">
+          Board of Advisors
+        </h2>
+
+        <!-- Leadership Section -->
+        <div class="mb-12 md:mb-16">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto"
+            id="boardLeadership"
+          >
+            <!-- Chair and Secretary cards will be inserted here -->
+          </div>
+        </div>
+
+        <!-- Members Section -->
+        <div>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
+            id="boardMembers"
+          >
+            <!-- Member cards will be inserted here -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Team Section -->
+    <section class="py-12 md:py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl md:text-3xl font-bold mb-8 md:mb-12 text-center">
+          Research Team
+        </h2>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
+          id="researchTeam"
+        >
+          <!-- Cards will be inserted here by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8">
+      <div class="container mx-auto px-4 text-center">
+        <p>&copy; 2024 The Future Institute. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Modal Template -->
+    <dialog id="personModal" class="modal">
+      <div class="modal-box max-w-md">
+        <div class="flex flex-col items-center">
+          <img
+            id="modalImage"
+            src=""
+            alt=""
+            class="w-32 h-32 rounded-full mb-4 object-cover"
+          />
+          <h3 id="modalName" class="text-xl font-bold mb-2 text-center"></h3>
+          <p id="modalPosition" class="text-gray-600 mb-4 text-center"></p>
+          <p id="modalBio" class="text-gray-700 mb-4 text-center"></p>
+          <div class="flex flex-col items-center space-y-2">
+            <p id="modalEmail" class="text-accent"></p>
+            <p id="modalPhone" class="text-gray-600"></p>
+          </div>
+        </div>
+        <div class="modal-action">
+          <form method="dialog">
+            <button class="btn btn-accent">Close</button>
+          </form>
+        </div>
+      </div>
+      <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+      </form>
+    </dialog>
+
+    <script>
+      // Fetch and load people data
+      fetch("data/people.json")
+        .then((response) => response.json())
+        .then((data) => {
+          // Function to create a card
+          function createCard(person) {
+            return `
+                        <div class="card bg-base-100 shadow-xl cursor-pointer hover:shadow-2xl transition-shadow" onclick="openModal('${person.id}')">
+                            <figure class="px-6 md:px-10 pt-6 md:pt-10">
+                                <img src="${person.image}" alt="${person.name}" class="rounded-full w-24 h-24 md:w-32 md:h-32 object-cover" />
+                            </figure>
+                            <div class="card-body items-center text-center p-4 md:p-6">
+                                <h2 class="card-title text-center text-base md:text-lg">${person.name}</h2>
+                                <p class="text-gray-600 text-sm md:text-base">${person.position}</p>
+                            </div>
+                        </div>
+                    `;
+          }
+
+          // Separate Board of Advisors into leadership and members
+          const leadership = data.boardOfAdvisors.filter(
+            (person) =>
+              person.position.includes("Chair") ||
+              person.position.includes("Secretary")
+          );
+          const members = data.boardOfAdvisors.filter((person) =>
+            person.position.includes("Member")
+          );
+
+          // Populate Leadership
+          const leadershipContainer =
+            document.getElementById("boardLeadership");
+          leadership.forEach((person) => {
+            leadershipContainer.innerHTML += createCard(person);
+          });
+
+          // Populate Members
+          const membersContainer = document.getElementById("boardMembers");
+          members.forEach((person) => {
+            membersContainer.innerHTML += createCard(person);
+          });
+
+          // Populate Research Team
+          const researchContainer = document.getElementById("researchTeam");
+          data.researchTeam.forEach((person) => {
+            researchContainer.innerHTML += createCard(person);
+          });
+
+          // Store the data globally for modal access
+          window.peopleData = {
+            ...data.boardOfAdvisors.reduce(
+              (acc, person) => ({ ...acc, [person.id]: person }),
+              {}
+            ),
+            ...data.researchTeam.reduce(
+              (acc, person) => ({ ...acc, [person.id]: person }),
+              {}
+            ),
+          };
+        });
+
+      // Function to open modal
+      function openModal(personId) {
+        const person = window.peopleData[personId];
+        if (!person) return;
+
+        document.getElementById("modalImage").src = person.image;
+        document.getElementById("modalName").textContent = person.name;
+        document.getElementById("modalPosition").textContent = person.position;
+        document.getElementById("modalBio").textContent = person.bio;
+        document.getElementById("modalEmail").textContent = person.email;
+        document.getElementById("modalPhone").textContent = person.phone;
+
+        document.getElementById("personModal").showModal();
+      }
+    </script>
+  </body>
+</html>
