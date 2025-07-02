@@ -25,372 +25,393 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
   </head>
   <body class="bg-white text-black">
     <!-- Navigation -->
-    <nav class="bg-black text-white py-4 sticky top-0 z-50">
-      <div class="container mx-auto px-4">
-        <div class="flex flex-col md:flex-row justify-between items-center">
-          <a href="#" class="text-2xl font-bold mb-4 md:mb-0 text-accent"
-            >The Future Institute</a
-          >
-          <div class="flex flex-wrap justify-center gap-4 md:gap-6">
-            <a href="#mission" class="hover:text-accent transition"
-              >Mission and Vision</a
-            >
-            <a href="#governance" class="hover:text-accent transition"
-              >Governance</a
-            >
-            <a href="people.html" class="hover:text-accent transition"
-              >Our People</a
-            >
+    <div
+      class="navbar bg-black text-white shadow-2xl ring-1 ring-gray-200 sticky top-0 z-50"
+    >
+      <div class="flex-1">
+        <a
+          href="index.html"
+          class="btn btn-ghost normal-case text-2xl font-bold text-accent"
+          >The Future Institute</a
+        >
+      </div>
+      <div class="flex-none">
+        <ul class="menu menu-horizontal px-1 text-white">
+          <li>
+            <a href="index.html" class="hover:text-accent transition">Home</a>
+          </li>
+          <li>
             <a href="blog.html" class="hover:text-accent transition">Blog</a>
-            <div class="relative group">
-              <button class="hover:text-accent transition flex items-center">
+          </li>
+          <li>
+            <a href="about.html" class="hover:text-accent transition">About</a>
+          </li>
+          <li>
+            <a href="events.html" class="hover:text-accent transition"
+              >Events</a
+            >
+          </li>
+          <li>
+            <details>
+              <summary class="hover:text-accent transition flex items-center">
                 The Future
-                <svg
-                  class="w-4 h-4 ml-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </button>
-              <div
-                class="absolute left-0 mt-2 w-48 bg-white text-black rounded-lg shadow-lg py-2 hidden group-hover:block"
+              </summary>
+              <ul
+                class="absolute right-3 mt-2 bg-white text-black rounded-t-none p-2 w-48"
               >
-                <a
-                  href="issue.html?id=april-2025"
-                  class="block px-4 py-2 hover:bg-gray-100"
-                  >April 2025 Issue</a
-                >
-                <a
-                  href="issue.html?id=march-2025"
-                  class="block px-4 py-2 hover:bg-gray-100"
-                  >March 2025 Issue</a
-                >
-                <a
-                  href="issue.html?id=february-2025"
-                  class="block px-4 py-2 hover:bg-gray-100"
-                  >February 2025 Issue</a
-                >
-                <a
-                  href="issue.html?id=january-2025"
-                  class="block px-4 py-2 hover:bg-gray-100"
-                  >January 2025 Issue</a
-                >
-                <a
-                  href="issue.html?id=december-2024"
-                  class="block px-4 py-2 hover:bg-gray-100"
-                  >December 2024 Issue</a
-                >
-                <div class="border-t border-gray-200 my-1"></div>
-                <a
-                  href="issues.html"
-                  class="block px-4 py-2 hover:bg-gray-100 text-accent"
-                  >View All Issues</a
-                >
-              </div>
-            </div>
+                <li>
+                  <a
+                    href="issue.html?id=april-2025"
+                    class="block px-4 py-2 hover:bg-gray-100"
+                    >April 2025 Issue</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="issue.html?id=march-2025"
+                    class="block px-4 py-2 hover:bg-gray-100"
+                    >March 2025 Issue</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="issue.html?id=february-2025"
+                    class="block px-4 py-2 hover:bg-gray-100"
+                    >February 2025 Issue</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="issue.html?id=january-2025"
+                    class="block px-4 py-2 hover:bg-gray-100"
+                    >January 2025 Issue</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="issue.html?id=december-2024"
+                    class="block px-4 py-2 hover:bg-gray-100"
+                    >December 2024 Issue</a
+                  >
+                </li>
+                <li><div class="border-t border-gray-200 my-1"></div></li>
+                <li>
+                  <a
+                    href="issues.html"
+                    class="block px-4 py-2 hover:bg-gray-100 text-accent"
+                    >View All Issues</a
+                  >
+                </li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Carousel Section -->
+    <section class="w-full h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden">
+      <div id="carousel" class="relative w-full h-full">
+        <div
+          class="carousel-slide absolute inset-0 w-full h-full flex items-center justify-center transition-all duration-700"
+          style="
+            background-image: url('https://www.amnesty.org/en/wp-content/uploads/2025/05/305628.jpg');
+            background-size: cover;
+            background-position: center;
+          "
+        >
+          <div
+            class="bg-black bg-opacity-60 p-8 rounded-lg max-w-xl text-center text-white mx-auto"
+          >
+            <h2 class="text-3xl md:text-4xl font-bold mb-2">
+              The Future: June 2025 Issue
+            </h2>
+            <p class="mb-4">ISSN 2753-3670</p>
+            <p class="mb-6">
+              This newsletter chronicles major events and developments in
+              emerging nations, offering news analysis for academics,
+              policymakers, and more.
+            </p>
+            <a
+              href="issue.html?id=june-2025"
+              class="inline-block bg-accent text-white px-6 py-2 rounded hover:bg-red-800 transition"
+              >Read Online</a
+            >
           </div>
         </div>
+        <div
+          class="carousel-slide absolute inset-0 w-full h-full flex items-center justify-center transition-all duration-700 opacity-0 pointer-events-none"
+          style="
+            background-image: url('https://www.chathamhouse.org/sites/default/files/styles/12_6_media_huge/public/2025-03/2025-03-31-gaza-2206318293.jpg');
+            background-size: cover;
+            background-position: center;
+          "
+        >
+          <div
+            class="bg-black bg-opacity-60 p-8 rounded-lg max-w-xl text-center text-white mx-auto"
+          >
+            <h2 class="text-3xl md:text-4xl font-bold mb-2">
+              The Future: May 2025 Issue
+            </h2>
+            <p class="mb-4">ISSN 2753-3670</p>
+            <p class="mb-6">
+              Explore the May 2025 issue for insights on global trends and
+              policy recommendations for emerging societies.
+            </p>
+            <a
+              href="issue.html?id=may-2025"
+              class="inline-block bg-accent text-white px-6 py-2 rounded hover:bg-red-800 transition"
+              >Read Online</a
+            >
+          </div>
+        </div>
+        <div
+          class="carousel-slide absolute inset-0 w-full h-full flex items-center justify-center transition-all duration-700 opacity-0 pointer-events-none"
+          style="
+            background-image: url('https://statik.tempo.co/data/2025/04/15/id_1391820/1391820_720.jpg');
+            background-size: cover;
+            background-position: center;
+          "
+        >
+          <div
+            class="bg-black bg-opacity-60 p-8 rounded-lg max-w-xl text-center text-white mx-auto"
+          >
+            <h2 class="text-3xl md:text-4xl font-bold mb-2">
+              The Future: April 2025 Issue
+            </h2>
+            <p class="mb-4">ISSN 2753-3670</p>
+            <p class="mb-6">
+              Catch up on the April 2025 issue, featuring analysis and
+              recommendations for the future of emerging nations.
+            </p>
+            <a
+              href="issue.html?id=april-2025"
+              class="inline-block bg-accent text-white px-6 py-2 rounded hover:bg-red-800 transition"
+              >Read Online</a
+            >
+          </div>
+        </div>
+        <button
+          id="prevSlide"
+          type="button"
+          class="absolute left-4 top-1/2 -translate-y-1/2 btn btn-circle z-10"
+        >
+          ❮
+        </button>
+        <button
+          id="nextSlide"
+          type="button"
+          class="absolute right-4 top-1/2 -translate-y-1/2 btn btn-circle z-10"
+        >
+          ❯
+        </button>
       </div>
-    </nav>
+      <script>
+        const slides = document.querySelectorAll(".carousel-slide");
+        let currentSlide = 0;
+        let autoSlideInterval;
+        function showSlide(idx) {
+          slides.forEach((slide, i) => {
+            if (i === idx) {
+              slide.style.opacity = "1";
+              slide.style.pointerEvents = "auto";
+              slide.style.zIndex = "1";
+            } else {
+              slide.style.opacity = "0";
+              slide.style.pointerEvents = "none";
+              slide.style.zIndex = "0";
+            }
+          });
+        }
+        function nextSlide() {
+          currentSlide = (currentSlide + 1) % slides.length;
+          showSlide(currentSlide);
+        }
+        function prevSlide() {
+          currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+          showSlide(currentSlide);
+        }
+        document.getElementById("prevSlide").onclick = () => {
+          prevSlide();
+          resetAutoSlide();
+        };
+        document.getElementById("nextSlide").onclick = () => {
+          nextSlide();
+          resetAutoSlide();
+        };
+        function startAutoSlide() {
+          autoSlideInterval = setInterval(nextSlide, 5000);
+        }
+        function resetAutoSlide() {
+          clearInterval(autoSlideInterval);
+          startAutoSlide();
+        }
+        showSlide(currentSlide);
+        startAutoSlide();
+      </script>
+    </section>
 
-    <!-- Hero Section -->
-    <header class="bg-black text-white py-16 md:py-20">
-      <div class="container mx-auto px-4 text-center">
-        <h1 class="text-4xl md:text-5xl font-bold mb-4 md:mb-6">The Future</h1>
-        <p class="text-lg md:text-xl mb-8">
-          Developing winning strategies for emerging nations
-        </p>
-      </div>
-    </header>
-
-    <!-- Newsletter Section -->
+    <!-- The Future (Mission & Vision) Section -->
     <section class="py-12 md:py-16 bg-gray-50">
       <div class="container mx-auto px-4">
-        <div class="max-w-4xl mx-auto">
-          <h2 class="text-accent text-2xl md:text-3xl font-bold mb-4 md:mb-6">
-            The Future: April 2025 Issue
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-accent text-2xl md:text-3xl font-bold mb-6">
+            The Future Institute
           </h2>
-          <p class="text-gray-600 mb-4">ISSN 2753-3670</p>
-          <p class="mb-6 md:mb-8 text-base md:text-lg">
-            The Future is a newsletter periodically published by The Future
-            Institute from First Floor, East, Business Centre, 93 Greenfield Rd,
-            London E1 1EJ. This newsletter aims to chronicle the major events
-            and developments in the societies of the emerging nations with the
-            potential of impacting their future. This publication offers
-            snippets of news analysis that might be advantageous to the
-            academics, policymakers, social and political workers, students and
-            various organisations.
+          <p class="mb-4 text-lg">
+            Developing winning strategies for emerging nations
           </p>
-          <p class="text-accent font-semibold">
-            If you are interested to engage and to contribute in TFI activities,
-            please write to us at admin@tfiuk.org
+          <p class="mb-4">
+            The Future Institute is a unique initiative that conducts
+            international research and consultancy work to promote future's
+            literacy with a particular focus on marginalised people and Muslim
+            communities and societies.
+          </p>
+          <p class="mb-4">
+            The current geopolitical climate across the Muslim world and "South"
+            more generally requires thought leadership from within their own
+            traditions that can successfully chart a way forward on issues of
+            politics, economics, society and technology that espouse critical
+            thinking, an ethical imagination and preferred de-colonised futures.
+          </p>
+          <p>
+            The expansion of the work of the Future Institute to include
+            research on global trends affecting Muslim majority societies and
+            diaspora communities; training and equipping of local and regional
+            policy makers across the Muslim world in futures thinking and
+            providing insightful and practical policy recommendations to global
+            actors is now not only possible, but essential.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- Mission and Vision Section -->
-    <section id="mission" class="py-12 md:py-16">
+    <!-- Blog Section -->
+    <section class="py-12 md:py-16">
       <div class="container mx-auto px-4">
         <div class="max-w-6xl mx-auto">
           <h2
-            class="text-accent text-2xl md:text-3xl font-bold mb-12 md:mb-16 text-center"
+            class="text-accent text-2xl md:text-3xl font-bold mb-8 text-center"
           >
-            Mission and Vision
+            Latest Blog Posts
           </h2>
-
-          <!-- Mission Items Grid -->
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Item 1 -->
-            <div
-              class="flex flex-col items-center text-center p-6 rounded-lg hover:shadow-lg transition-shadow duration-300"
-            >
-              <div
-                class="w-20 h-20 rounded-full bg-accent flex items-center justify-center mb-6"
-              >
-                <i class="fas fa-globe text-3xl text-white"></i>
-              </div>
-              <h3 class="text-xl font-bold mb-4">Global Research</h3>
-              <p class="text-base md:text-lg">
-                The Future Institute is a unique initiative that conducts
-                international research and consultancy work to promote future's
-                literacy with a particular focus on marginalised people and
-                Muslim communities and societies.
-              </p>
-            </div>
-
-            <!-- Item 2 -->
-            <div
-              class="flex flex-col items-center text-center p-6 rounded-lg hover:shadow-lg transition-shadow duration-300"
-            >
-              <div
-                class="w-20 h-20 rounded-full bg-accent flex items-center justify-center mb-6"
-              >
-                <i class="fas fa-lightbulb text-3xl text-white"></i>
-              </div>
-              <h3 class="text-xl font-bold mb-4">Thought Leadership</h3>
-              <p class="text-base md:text-lg">
-                The current geopolitical climate across the Muslim world and
-                "South" more generally requires thought leadership from within
-                their own traditions that can successfully chart a way forward
-                on issues of politics, economics, society and technology that
-                espouse critical thinking, an ethical imagination and preferred
-                de-colonised futures.
-              </p>
-            </div>
-
-            <!-- Item 3 -->
-            <div
-              class="flex flex-col items-center text-center p-6 rounded-lg hover:shadow-lg transition-shadow duration-300"
-            >
-              <div
-                class="w-20 h-20 rounded-full bg-accent flex items-center justify-center mb-6"
-              >
-                <i class="fas fa-chart-line text-3xl text-white"></i>
-              </div>
-              <h3 class="text-xl font-bold mb-4">Future Vision</h3>
-              <p class="text-base md:text-lg">
-                The expansion of the work of the Future Institute to include
-                research on global trends affecting Muslim majority societies
-                and diaspora communities; training and equipping of local and
-                regional policy makers across the Muslim world in futures
-                thinking and providing insightful and practical policy
-                recommendations to global actors is now not only possible, but
-                essential.
-              </p>
-            </div>
-          </div>
+          <div id="blog-section" class="flex flex-col md:flex-row gap-8"></div>
         </div>
       </div>
+      <script>
+        fetch("data/blogs.json")
+          .then((res) => res.json())
+          .then((data) => {
+            const blogs = data.blogs.slice(-3).reverse();
+            const blogSection = document.getElementById("blog-section");
+            if (blogs.length === 0) return;
+            // Large card for the latest blog
+            const latest = blogs[0];
+            const largeCard = document.createElement("div");
+            largeCard.className =
+              "bg-white rounded-lg shadow-2xl ring-1 ring-gray-200 p-8 flex flex-col justify-between w-full md:w-1/2";
+            largeCard.innerHTML = `
+              <h3 class="font-bold text-2xl mb-4">${latest.title}</h3>
+              <p class="text-gray-700 mb-6 text-base md:text-lg" style="display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden;">${latest.content}</p>
+              <a href="blog-post.html?id=${latest.id}" class="mt-auto inline-block text-lg bg-accent text-white px-6 py-3 rounded hover:bg-red-800 transition font-semibold text-center">Read More</a>
+            `;
+            // Small cards for the next 2 blogs
+            const rightCol = document.createElement("div");
+            rightCol.className =
+              "flex flex-col justify-between w-full md:w-1/2";
+            blogs.slice(1).forEach((blog) => {
+              const card = document.createElement("div");
+              card.className =
+                "bg-white rounded-lg shadow-2xl ring-1 ring-gray-200 p-6 flex flex-col";
+              card.innerHTML = `
+                <h4 class="font-bold text-lg mb-2">${blog.title}</h4>
+                <a href="blog-post.html?id=${blog.id}" class="mt-auto text-accent hover:underline font-semibold">Read More</a>
+              `;
+              rightCol.appendChild(card);
+            });
+            blogSection.appendChild(largeCard);
+            blogSection.appendChild(rightCol);
+          });
+      </script>
     </section>
 
-    <!-- Objectives Section -->
+    <!-- Events Section -->
     <section class="py-12 md:py-16 bg-gray-50">
       <div class="container mx-auto px-4">
-        <div class="max-w-6xl mx-auto">
-          <h2
-            class="text-accent text-2xl md:text-3xl font-bold mb-12 md:mb-16 text-center"
-          >
-            Objectives
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-accent text-2xl md:text-3xl font-bold mb-6">
+            Upcoming Events
           </h2>
-
-          <!-- Timeline Container -->
-          <div class="relative">
-            <!-- Vertical Line - Hidden on mobile -->
-            <div
-              class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-accent"
-            ></div>
-
-            <!-- Objective 1 -->
-            <div class="relative mb-24 md:mb-32">
-              <div class="flex flex-col md:flex-row items-center">
-                <!-- Mobile Circle First -->
-                <div
-                  class="md:hidden w-32 h-32 text-5xl rounded-full bg-accent flex items-center justify-center text-white font-bold shadow-lg transform hover:scale-105 transition-transform duration-300 aspect-square mb-8"
-                >
-                  1
-                </div>
-                <!-- Left Content -->
-                <div
-                  class="w-full md:w-1/2 md:pr-16 text-center md:text-right mb-8 md:mb-0"
-                >
-                  <p class="text-base md:text-lg max-w-xl mx-auto md:ml-auto">
-                    The Future Institute seeks to expand its research on post
-                    normal times and preferred futures as applied to the
-                    pressing geopolitical trends and issues of the day. The
-                    application of a futures thinking to the areas of politics,
-                    economics, society and technology ("PEST") represents a sea
-                    change from the old and tired paradigms of current think
-                    tank and research institutions. This largely academic
-                    pursuit, rooted in the reality of the world as it is, is
-                    essential to chart a course forward for Muslim societies
-                    globally.
-                  </p>
-                </div>
-                <!-- Desktop Circle -->
-                <div
-                  class="hidden md:flex w-32 h-32 text-5xl rounded-full bg-accent items-center justify-center text-white font-bold shadow-lg transform hover:scale-105 transition-transform duration-300 aspect-square"
-                >
-                  1
-                </div>
-                <!-- Right Content (Empty) -->
-                <div class="hidden md:block w-1/2 pl-16"></div>
-              </div>
+          <p class="mb-8">
+            Stay tuned for upcoming events and activities from The Future
+            Institute. More details will be announced soon.
+          </p>
+          <div class="flex flex-col md:flex-row justify-center gap-8">
+            <div class="bg-white rounded-lg shadow p-6 w-full md:w-1/2">
+              <h3 class="font-bold text-lg mb-2">Annual Board Meeting</h3>
+              <p class="text-gray-600 mb-2">Date: TBA</p>
+              <p class="text-gray-600 mb-4">
+                The international Board of Advisors meets to discuss strategy,
+                compliance, and future plans.
+              </p>
             </div>
-
-            <!-- Objective 2 -->
-            <div class="relative mb-24 md:mb-32">
-              <div class="flex flex-col md:flex-row items-center">
-                <!-- Mobile Circle First -->
-                <div
-                  class="md:hidden w-32 h-32 text-5xl rounded-full bg-accent flex items-center justify-center text-white font-bold shadow-lg transform hover:scale-105 transition-transform duration-300 aspect-square mb-8"
-                >
-                  2
-                </div>
-                <!-- Left Content (Empty) -->
-                <div class="hidden md:block w-1/2 pr-16"></div>
-                <!-- Desktop Circle -->
-                <div
-                  class="hidden md:flex w-32 h-32 text-5xl rounded-full bg-accent items-center justify-center text-white font-bold shadow-lg transform hover:scale-105 transition-transform duration-300 aspect-square"
-                >
-                  2
-                </div>
-                <!-- Right Content -->
-                <div
-                  class="w-full md:w-1/2 md:pl-16 text-center md:text-left mt-8 md:mt-0"
-                >
-                  <p class="text-base md:text-lg max-w-xl mx-auto md:mr-auto">
-                    The second objective, to train and equip a generation of
-                    policy makers and influencers who approach the world and
-                    policy making through the lens of futures thought and
-                    post-normal times, is essential to move the work of the
-                    Future Institute from pure theory to application on the
-                    ground. Much of this work will be informed by local issues
-                    and understandings, while considering global trends as borne
-                    out by relevant research.
-                  </p>
-                </div>
-              </div>
+            <div class="bg-white rounded-lg shadow p-6 w-full md:w-1/2">
+              <h3 class="font-bold text-lg mb-2">Regional Policy Workshop</h3>
+              <p class="text-gray-600 mb-2">Date: TBA</p>
+              <p class="text-gray-600 mb-4">
+                Workshops for local and regional policy makers on futures
+                thinking and policy recommendations.
+              </p>
             </div>
-
-            <!-- Objective 3 -->
-            <div class="relative mb-24 md:mb-32">
-              <div class="flex flex-col md:flex-row items-center">
-                <!-- Mobile Circle First -->
-                <div
-                  class="md:hidden w-32 h-32 text-5xl rounded-full bg-accent flex items-center justify-center text-white font-bold shadow-lg transform hover:scale-105 transition-transform duration-300 aspect-square mb-8"
-                >
-                  3
-                </div>
-                <!-- Left Content -->
-                <div
-                  class="w-full md:w-1/2 md:pr-16 text-center md:text-right mb-8 md:mb-0"
-                >
-                  <p class="text-base md:text-lg max-w-xl mx-auto md:ml-auto">
-                    Finally, the Future Institute will set out a series of
-                    policy recommendations that concern Muslim majority
-                    countries, Muslims in minority diaspora communities, and
-                    marginalised people more broadly. These recommendations will
-                    take into account the learning from both theoretical
-                    research and practical applications.
-                  </p>
-                </div>
-                <!-- Desktop Circle -->
-                <div
-                  class="hidden md:flex w-32 h-32 text-5xl rounded-full bg-accent items-center justify-center text-white font-bold shadow-lg transform hover:scale-105 transition-transform duration-300 aspect-square"
-                >
-                  3
-                </div>
-                <!-- Right Content (Empty) -->
-                <div class="hidden md:block w-1/2 pl-16"></div>
-              </div>
-            </div>
-
-            <!-- Join Us Circle -->
-            <div class="relative mb-24 md:mb-32">
-              <div
-                class="flex flex-col md:flex-row items-center justify-center"
-              >
-                <!-- Circle -->
-                <div
-                  class="w-32 h-32 text-2xl md:text-3xl rounded-full bg-accent flex items-center justify-center text-white font-bold shadow-lg transform hover:scale-105 transition-transform duration-300 aspect-square"
-                >
-                  Join Us
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Governance Section -->
-    <section id="governance" class="py-12 md:py-16">
-      <div class="container mx-auto px-4">
-        <div class="max-w-4xl mx-auto">
-          <h2 class="text-accent text-2xl md:text-3xl font-bold mb-6 md:mb-8">
-            Governance
-          </h2>
-          <div class="space-y-4 md:space-y-6">
-            <p class="text-base md:text-lg">
-              The Future Institute is governed by an international Board of
-              Advisors. The Advisors are carefully selected so that they are
-              able to provide competent oversight with regards to the
-              organisation's values, vision, mission, strategy and delivery
-              plan; legal and charitable compliance; finances and financial
-              sustainability; and the reputational health of the organisation.
-              The Board meets at least once a year, and where possible or
-              required twice a year.
-            </p>
-            <p class="text-base md:text-lg">
-              Initially, The Future Institute looks to expand its operations
-              from London, phasing in centres in Kuala Lumpur, Istanbul,
-              Islamabad and Washington to increase regional depth of knowledge
-              and global insight.
-            </p>
-            <p class="text-base md:text-lg">
-              The current operating model of The Future Institute is being
-              utilised and enhanced to the following organisational structure:
-            </p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-black text-white py-8">
-      <div class="container mx-auto px-4 text-center">
-        <p>&copy; 2024 The Future Institute. All rights reserved.</p>
+    <footer
+      class="bg-black text-white py-8 w-full"
+      style="box-shadow: 0 -2px 16px rgba(0, 0, 0, 0.1)"
+    >
+      <div
+        class="container mx-auto px-4 text-center flex flex-col items-center gap-2"
+      >
+        <div class="flex justify-center gap-6 mb-2">
+          <a
+            href="#"
+            class="text-xl hover:text-accent transition"
+            aria-label="X (Twitter)"
+            ><i class="fab fa-x-twitter"></i
+          ></a>
+          <a
+            href="#"
+            class="text-xl hover:text-accent transition"
+            aria-label="Facebook"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a
+            href="#"
+            class="text-xl hover:text-accent transition"
+            aria-label="LinkedIn"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+        <p class="text-sm">
+          &copy; 2021–2025 The Future Institute, serviced by Future Academy
+          Limited
+        </p>
+        <div class="flex flex-wrap justify-center gap-4 text-xs">
+          <a href="#" class="hover:text-accent underline">Privacy Policy</a>
+          <a href="#" class="hover:text-accent underline">Terms of Use</a>
+        </div>
       </div>
     </footer>
   </body>

@@ -1,0 +1,28 @@
+{
+  "events": [
+    {
+      "id": "annual-board-meeting-2025",
+      "title": "Annual Board Meeting",
+      "date": "2025-07-12",
+      "location": "London, UK",
+      "description": "The international Board of Advisors meets to discuss strategy, compliance, and future plans for The Future Institute.",
+      "category": "Governance"
+    },
+    {
+      "id": "regional-policy-workshop-2025",
+      "title": "Regional Policy Workshop",
+      "date": "2025-08-28",
+      "location": "Kuala Lumpur, Malaysia",
+      "description": "Workshops for local and regional policy makers on futures thinking and policy recommendations, with hands-on sessions and expert panels.",
+      "category": "Workshop"
+    },
+    {
+      "id": "emerging-nations-conference-2025",
+      "title": "Emerging Nations Conference 2025",
+      "date": "2025-09-15",
+      "location": "Istanbul, Turkey",
+      "description": "A global conference bringing together researchers, policymakers, and community leaders to discuss strategies for emerging nations in the 21st century.",
+      "category": "Conference"
+    }
+  ]
+}
